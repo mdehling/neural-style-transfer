@@ -1,0 +1,24 @@
+= Neural Style Transfer
+Malte Dehling <mdehling@gmail.com>
+
+:gatys-ts-nst: https://github.com/mdehling/neural-style-transfer/blob/main/Gatys_Texture_Synthesis_and_Neural_Style_Transfer.ipynb
+
+In 2015, Gatys, Ecker, and Bethge published two articles [1,2] that started
+the neural network approach to texture synthesis and neural style transfer.
+Their key insight was that correlations between filter responses in layers of
+a convolutional neural networks trained for image recognition are a good
+measure of style/texture.  In {gatys-ts-nst}[this jupyter notebook] I
+reproduce their results and go through some of the improvements suggested in
+later works by the authors and others [3,4,5].
+
+References
+----------
+1. Gatys, Ecker, Bethge - _Texture Synthesis Using Convolutional Neural
+Networks_, 2015.
+2. Gatys, Ecker, Bethge - _A Neural Algorithm of Artistic Style_, 2015.
+3. Gatys, Bethge, Hertzmann, Shechtman - _Preserving Color in Neural Artistic
+Style Transfer_, 2016.
+4. Berger, Memisevic - _Incorporating Long-Range Consistency in CNN-Based
+Texture Generation_, 2017.
+5. Gatys, Ecker, Bethge, Hertzmann, Shechtman - _Controlling Perceptual
+Factors in Neural Style Transfer_, 2017.
