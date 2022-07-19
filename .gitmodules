@@ -1,0 +1,4 @@
+[submodule "nstesia"]
+	path = nstesia
+	url = https://github.com/mdehling/nstesia.git
+	branch = main
