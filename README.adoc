@@ -1,24 +1,30 @@
 = Neural Style Transfer
 Malte Dehling <mdehling@gmail.com>
 
-:gatys-ts-nst: https://github.com/mdehling/neural-style-transfer/blob/main/Gatys_Texture_Synthesis_and_Neural_Style_Transfer.ipynb
+:gh-main: https://github.com/mdehling/neural-style-transfer/blob/main
 
-In 2015, Gatys, Ecker, and Bethge published two articles [1,2] that started
-the neural network approach to texture synthesis and neural style transfer.
-Their key insight was that correlations between filter responses in layers of
-a convolutional neural networks trained for image recognition are a good
-measure of style/texture.  In {gatys-ts-nst}[this jupyter notebook] I
-reproduce their results and go through some of the improvements suggested in
-later works by the authors and others [3,4,5].
+:gatys2015:     {gh-main}/Gatys_Texture_Synthesis_and_Neural_Style_Transfer.ipynb
+:johnson2016:   {gh-main}/johnson2016.ipynb
 
-References
-----------
-1. Gatys, Ecker, Bethge - _Texture Synthesis Using Convolutional Neural
-Networks_, 2015.
-2. Gatys, Ecker, Bethge - _A Neural Algorithm of Artistic Style_, 2015.
-3. Gatys, Bethge, Hertzmann, Shechtman - _Preserving Color in Neural Artistic
-Style Transfer_, 2016.
-4. Berger, Memisevic - _Incorporating Long-Range Consistency in CNN-Based
-Texture Generation_, 2017.
-5. Gatys, Ecker, Bethge, Hertzmann, Shechtman - _Controlling Perceptual
-Factors in Neural Style Transfer_, 2017.
+
+In 2015, Gatys, Ecker, and Bethge published two articles that started the
+neural network approach to texture synthesis and neural style transfer:
+_Texture Synthesis Using Convolutional Neural Networks_ and _A Neural
+Algorithm of Artistic Style_.  Their key insight was that correlations between
+filter responses in layers of a convolutional neural networks trained for
+image recognition are a good measure of style/texture.  They use an
+optimization approach to iteratively produce an image matching the style of
+one given image and the content of another.  In {gatys2015}[this jupyter
+notebook] I reproduce their results and go through some of the improvements
+suggested in later works by the authors and others.
+
+In 2016, Johnson, Alahi, and Fei-Fei proposed a way to do fast neural style
+transfer in their article _Perceptual Losses for Real-Time Style Transfer and
+Super-Resolution_.  Their idea was to train, given a style image, a residual
+neural network to transform any content image into a stylized version of
+itself using a single forward pass of the style transfer network.  To train
+the network they use the MS-COCO/2014 dataset and minimize a weighted sum of
+Gatys' content loss between the input and output of the network and Gatys'
+style loss between the output and the given style image.  In the notebook
+{johnson2016}[johnson2016.ipynb] I go into more detail and provide an
+implementation of this approach.
