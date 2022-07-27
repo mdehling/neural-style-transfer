@@ -3,7 +3,7 @@ Malte Dehling <mdehling@gmail.com>
 
 :gh-main: https://github.com/mdehling/neural-style-transfer/blob/main
 
-:gatys2015:     {gh-main}/Gatys_Texture_Synthesis_and_Neural_Style_Transfer.ipynb
+:gatys2015:     {gh-main}/gatys2015.ipynb
 :johnson2016:   {gh-main}/johnson2016.ipynb
 
 
@@ -14,9 +14,9 @@ Algorithm of Artistic Style_.  Their key insight was that correlations between
 filter responses in layers of a convolutional neural networks trained for
 image recognition are a good measure of style/texture.  They use an
 optimization approach to iteratively produce an image matching the style of
-one given image and the content of another.  In {gatys2015}[this jupyter
-notebook] I reproduce their results and go through some of the improvements
-suggested in later works by the authors and others.
+one given image and the content of another.  In {gatys2015}[gatys2015.ipynb] I
+reproduce their results and go through some of the improvements suggested in
+later works by the authors and others.
 
 In 2016, Johnson, Alahi, and Fei-Fei proposed a way to do fast neural style
 transfer in their article _Perceptual Losses for Real-Time Style Transfer and
