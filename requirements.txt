@@ -1,4 +1,5 @@
 tensorflow ~= 2.8.2
+tensorflow-addons
 tensorflow-datasets
 matplotlib
 jupyterlab
