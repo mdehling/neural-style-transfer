@@ -5,6 +5,7 @@ Malte Dehling <mdehling@gmail.com>
 
 :gatys2015:     {gh-main}/gatys2015.ipynb
 :johnson2016:   {gh-main}/johnson2016.ipynb
+:dumoulin2017:  {gh-main}/dumoulin2017.ipynb
 
 
 In 2015, Gatys, Ecker, and Bethge published two articles that started the
@@ -28,3 +29,15 @@ Gatys' content loss between the input and output of the network and Gatys'
 style loss between the output and the given style image.  In the notebook
 {johnson2016}[johnson2016.ipynb] I go into more detail and provide an
 implementation of this approach.
+
+In 2017, Dumoulin, Shlens, and Kudlur published their article _A Learned
+Representation for Artistic Style_ in which they modify Johnson's style
+transfer network to learn multiple styles simultaneously.  Their insight was
+that the learned filters of the style transfer network could be shared between
+different styles and it is sufficient to learn a different set of
+normalization parameters for each style.  To allow for this, they introduced
+their conditional instance normalization layer to replace the previously used
+batch or instance normalization layers.  This new style transfer network takes
+an image and a vector indicating a style (or a mix of styles) and produces a
+stylized image.  In {dumoulin2017}[dumoulin2017.ipynb] I give a bit more
+detail and reproduce their results.
