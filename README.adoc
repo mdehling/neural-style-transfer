@@ -1,12 +1,17 @@
 = Neural Style Transfer
 Malte Dehling <mdehling@gmail.com>
 
-:gh-main: https://github.com/mdehling/neural-style-transfer/blob/main
+:nbviewer: https://nbviewer.org/github/mdehling/neural-style-transfer/blob/main
 
-:gatys2015:     {gh-main}/gatys2015.ipynb
-:johnson2016:   {gh-main}/johnson2016.ipynb
-:dumoulin2017:  {gh-main}/dumoulin2017.ipynb
+:gatys2015:     {nbviewer}/gatys2015.ipynb
+:johnson2016:   {nbviewer}/johnson2016.ipynb
+:dumoulin2017:  {nbviewer}/dumoulin2017.ipynb
 
+
+NOTE: The notebooks in this repository contain lots of images and, as a
+result, are fairly large.  GitHub's notebook viewer will time out when trying
+to open them, so the links below use https://nbviewer.org/[nbviewer.org]
+instead.
 
 In 2015, Gatys, Ecker, and Bethge published two articles that started the
 neural network approach to texture synthesis and neural style transfer:
